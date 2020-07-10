@@ -105,7 +105,6 @@ void mode_spi( d )
 char _xchg_spi(char d)
 {
     int i;
-    volatile int delay;
 
     /* Write the data to exchange */
     SPI_TSR = d;
@@ -117,12 +116,6 @@ char _xchg_spi(char d)
             break;
         }
         ++i;
-    }
-
-    /* Delay, then read data */
-    delay = 0;
-    while (delay < 1) {
-        ++delay;
     }
 
     return SPI_RBR;

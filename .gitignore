@@ -40,3 +40,5 @@ source/cpm/Debug/z20x_Debug.linkcmd
 source/cpm/Debug/z20x_Debug.mak
 source/cpm/Debug/zsldevinit.lst
 source/cpm/Debug/zsldevinit.obj
+*.svn-base
+*.db
