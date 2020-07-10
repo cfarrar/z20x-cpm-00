@@ -42,3 +42,6 @@ source/cpm/Debug/zsldevinit.lst
 source/cpm/Debug/zsldevinit.obj
 *.svn-base
 *.db
+*.db
+*.lis
+*.src
