@@ -37,59 +37,13 @@
 ; --------------------------------------------------------------------------
 ; wrapper functions
 ; --------------------------------------------------------------------------
-_isruart0:      push            af
-                push            bc
-                push            de
-                push            hl
-                push            ix
-                push            iy
-                ex              af,af'
-                exx
-                push            af
-                push            bc
-                push            de
-                push            hl
+_isruart0:
                 call            _isr_uart0
-                pop             hl
-                pop             de
-                pop             bc
-                pop             af
-                exx
-                ex              af,af'
-                pop             iy
-                pop             ix
-                pop             hl
-                pop             de
-                pop             bc
-                pop             af
                 ei
                 reti.l
 ; --------------------------------------------------------------------------
-_isruart1:      push            af
-                push            bc
-                push            de
-                push            hl
-                push            ix
-                push            iy
-                ex              af,af'
-                exx
-                push            af
-                push            bc
-                push            de
-                push            hl
+_isruart1:
                 call            _isr_uart1
-                pop             hl
-                pop             de
-                pop             bc
-                pop             af
-                exx
-                ex              af,af'
-                pop             iy
-                pop             ix
-                pop             hl
-                pop             de
-                pop             bc
-                pop             af
                 ei
                 reti.l
 ; --------------------------------------------------------------------------
@@ -97,4 +51,5 @@ _isruart1:      push            af
 ; --------------------------------------------------------------------------
                 end
 ; --------------------------------------------------------------------------
+
 
